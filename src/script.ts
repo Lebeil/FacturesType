@@ -1,5 +1,5 @@
 import { FormInput } from "./classes/FormInput.js";
-import { Storage } from "./classes/Storage.js";
+import { Storages } from "./classes/Storages.js";
 
 new FormInput();
-Storage.checkLocalStorage()
+Storages.checkLocalStorage()
