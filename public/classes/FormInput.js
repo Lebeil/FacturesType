@@ -1,5 +1,5 @@
-import { Data } from '../classes/Data.js';
-import { Display } from "../classes/Display.js";
+import { Datas } from './Datas.js';
+import { Display } from "./Display.js";
 import { Print } from "./Print.js";
 export class FormInput {
     constructor() {
@@ -84,7 +84,7 @@ export class FormInput {
             /*console.log(type, firstName, lastName, address, country, town, zip, product, price, quantity, tva)*/
             let docData;
             let date = new Date();
-            docData = new Data(type, firstName, lastName, address, country, town, zip, product, price, quantity, tva, date);
+            docData = new Datas(type, firstName, lastName, address, country, town, zip, product, price, quantity, tva, date);
             let template;
             template = new Display(this.docContainer, this.hiddenDiv, this.btnPrint);
             template.render(docData, type);

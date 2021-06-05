@@ -1,7 +1,7 @@
-import { Data } from '../classes/Data.js'
+import { Datas } from './Datas.js'
 import { HasHtmlFormat } from "../interfaces/HasHtmlFormat.js";
-import { HasRender} from "../interfaces/hasRender.js";
-import {Display} from "../classes/Display.js";
+import { HasRender} from "../interfaces/HasRender.js";
+import {Display} from "./Display.js";
 import {HasPrint} from "../interfaces/HasPrint.js";
 import {Print} from "./Print.js";
 
@@ -125,7 +125,7 @@ export class FormInput {
             let docData: HasHtmlFormat;
             let date: Date = new Date();
 
-            docData = new Data(type, firstName, lastName, address, country, town, zip, product, price, quantity, tva, date);
+            docData = new Datas(type, firstName, lastName, address, country, town, zip, product, price, quantity, tva, date);
             let template: HasRender;
             template = new Display(this.docContainer, this.hiddenDiv, this.btnPrint);
             template.render(docData, type)

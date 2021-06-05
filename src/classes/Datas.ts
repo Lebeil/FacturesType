@@ -1,6 +1,6 @@
 import {HasHtmlFormat} from '../interfaces/HasHtmlFormat.js'
 
-export class Data implements HasHtmlFormat {
+export class Datas implements HasHtmlFormat {
     constructor(
         private documentType: string,
         private firstName: string,

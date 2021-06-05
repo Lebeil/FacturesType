@@ -1,4 +1,4 @@
-export class Data {
+export class Datas {
     constructor(documentType, firstName, lastName, address, country, town, zip, product, price, quantity, tva, date) {
         this.documentType = documentType;
         this.firstName = firstName;
